@@ -1,0 +1,118 @@
+.admin-panel{
+  height: 100vh;
+  justify-content: center;
+  background-color: rgba($black,0.9);
+  overflow: scroll;
+
+  .nav {
+    position: relative;
+    top: 0;
+    border-bottom: solid $orange;
+    width: 95%;
+    margin: 15px;
+    padding-bottom: 150px ;
+    height: 15%;
+
+    .title{
+      margin: auto;
+      h1{
+        color: #ddd;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+
+    .option-icons{
+      display: flex;
+      justify-content: flex-end;
+      margin: auto;
+
+      .option-icon{
+        margin:5%;
+        border-left: solid #4d4d4d;
+        padding-left: 40px;
+
+        img{
+          height: 90px;
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  .administration {
+    position: relative;
+    margin-top: 0;
+    width: 90%;
+    height: 60%;
+
+    &__hidden{
+      display: none;
+    }
+
+    table {
+      width: 100%;
+
+      thead {
+        th {
+          padding: 0.35em 0 .35em;
+          border-right: 3px solid $orange;
+          padding-left: .75em;
+          font-weight: 400;
+          text-align: left;
+          color: $orange;
+          font-size: 1.25em;
+        }
+        th:last-child {
+          border-right: 0;
+        }
+
+      }
+
+      tbody {
+        tr {
+          td {
+            padding: .75em 0;
+            border-right: 3px solid $orange;
+            padding-left: 1em;
+            color: #ddd;
+
+
+            img {
+              margin-left: 20%;
+              height: 20px;
+              &:hover, &:active, &:focus {
+                filter: grayscale(100%) brightness(150%);
+                transform: scale(1.2);
+              }
+            }
+          }
+          td:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+    .pagination {
+      margin: 5%;
+      display:flex;
+      justify-content: flex-end;
+      width: 90%;
+
+      img {
+        margin-left: 10px;
+        height: 25px;
+        &:hover, &:active, &:focus {
+          filter: grayscale(100%) brightness(150%);
+          transform: scale(1.2);
+        }
+
+      }
+    }
+
+
+  }
+
+}

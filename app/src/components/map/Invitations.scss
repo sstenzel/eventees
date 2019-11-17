@@ -1,0 +1,92 @@
+.invitation-tile {
+
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  min-width: 300px;
+  &:hover{
+    img.background{
+      transform: scale(1.25);
+    }
+  }
+  img.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+
+  &__content {
+    padding-left: 12px;
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 3px;
+      height: 90%;
+      background-color: #F2994A;
+    }
+    h4 {
+      color: $white;
+      margin-top: 5px;
+    }
+    h6.orange{
+      color: $orange;
+    }
+    h6.white{
+      color: $white;
+    }
+    h5{
+      text-transform: lowercase;
+      color: $orange;
+      font-size: 12px;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__left {
+      padding-top: 7px;
+      width: 50%;
+      height: 100%;
+    }
+
+    &__right {
+      padding-top: 14px;
+      text-align: right;
+      width: 50%;
+      height: 80%;
+
+      img{
+        width: 20px;
+        height: 20px;
+        margin: 8px 0 0 3px ;
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+}

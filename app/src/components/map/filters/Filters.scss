@@ -1,0 +1,61 @@
+.map-section-filters {
+  // border-radius: $iconSize;
+  width: 0;
+  &.active {
+    width: 340px;
+    .map__icon {
+      background-image: none;
+      left: 5px;
+    }
+  }
+  &.left {
+    left: 340px;
+  }
+  .map__icon {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+  }
+  .map-section__inner {
+    display: flex;
+    flex-direction: column;
+    .map-section__heading {
+      flex: 0 0 70px;
+    }
+    .map-section__content {
+      flex: 0 0 calc(100% - 140px);
+    }
+    form {
+      .filter-sports {
+        .filter-sports__single {
+          width: 48px;
+          height: 48px;
+          border-radius: 5px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.8;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+          border: 1px solid transparent;
+          img {
+            width: 23px;
+          }
+          &:hover {
+            border-color: #aaa;
+            opacity: 1;
+          }
+          &.active {
+            border-color: $orange;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.map-section-filters .map-section__inner h4{
+  margin: 0 0 20px;
+}

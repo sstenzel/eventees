@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111.166" height="136.76" viewBox="0 0 111.166 136.76">
+  <g id="Group_7" data-name="Group 7" transform="translate(-41.513 -113.24)">
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="55.579" cy="55.579" r="55.579" transform="translate(41.52 113.24)" fill="#ffd71c"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="37.867" cy="5.24" rx="37.867" ry="5.24" transform="translate(57.818 239.521)" fill="#dbd8cc"/>
+    <path id="Path_6" data-name="Path 6" d="M91.543,211.352c-30.368-4.479-52.539-26.729-48.06-57.1,0-.032.011-.064.016-.1a55.574,55.574,0,1,0,108.581,22.79C144.936,202.941,119.663,215.5,91.543,211.352Z" fill="#ffc81c"/>
+    <g id="Group_6" data-name="Group 6">
+      <g id="Group_5" data-name="Group 5">
+        <g id="Group_4" data-name="Group 4">
+          <path id="Path_7" data-name="Path 7" d="M132.13,185.414a7.753,7.753,0,1,1-15.5.4" fill="none" stroke="#5f3e1b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Path_8" data-name="Path 8" d="M79.676,186.775a7.753,7.753,0,1,1-15.5.4" fill="none" stroke="#5f3e1b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+      </g>
+      <path id="Path_9" data-name="Path 9" d="M57.818,176.353s16.086,6.669,23.914-7.534" fill="none" stroke="#5f3e1b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_10" data-name="Path 10" d="M137.086,176.353s-16.086,6.669-23.914-7.534" fill="none" stroke="#5f3e1b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_11" data-name="Path 11" d="M89.059,213.487s9.071-5.773,16.08,0" fill="none" stroke="#5f3e1b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <path id="Path_12" data-name="Path 12" d="M132.459,145.316c-2.526,4.554-9.1-5.007-20.3-11.221s-22.793-6.729-20.266-11.283,13.655-3.209,24.857,3.006S134.986,140.762,132.459,145.316Z" fill="#ffe81c"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="4.715" cy="4.715" r="4.715" transform="translate(132.284 150.112)" fill="#ffe81c"/>
+  </g>
+</svg>

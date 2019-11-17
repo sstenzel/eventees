@@ -1,0 +1,186 @@
+$transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$width: 2.5em;
+$height: $width/2;
+
+.navigation {
+  height: 100%;
+  .navigation__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    // @include gradient(90deg);
+    background-color: $black;
+    & > div{
+      width: 100%;
+    }
+    .title {
+      // background-color: $dark-orange;
+      background-color: $orange;
+      border-bottom: 2px solid $orange;
+      height: 70px;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 86%;
+      }
+      h1{
+        color:$white;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    }
+    .navigation__menu{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      ul {
+        width: 100%;
+        li {
+          // box-shadow: 1px 1px 2px 0px rgba($black,0.15);
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          padding: 5px 5px;
+          position: relative;
+          margin: 15px 0;
+          opacity: 0.8;
+          transition: 0.3s;
+          overflow: hidden;
+          span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            img {
+              width: 28px;
+            }
+            h5 {
+              width: 100%;
+              padding-top: 5px;
+            }
+          }
+          &:first-child {
+            margin-top: 30px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 0px;
+            height: 100%;
+            // border-radius: 2px;
+            background-color: $orange;
+            transition: 0.3s;
+          }
+          &:hover{
+            opacity: 1;
+            // &::after {
+            //   width: 1px;
+            // }
+          }
+          &.active{
+            opacity: 1;
+            &::after {
+              width: 2px;
+            }
+          }
+          &.toggle__button {
+            // position: absolute;
+            // bottom: 0;
+            &::after {
+              display: none;
+            }
+            .toggle {
+              .toggle-control {
+                transition: $transition;
+                width: $width;
+                height: $height;
+                display: block;
+                border: 2px solid $orange;
+                border-radius: $height;
+                background-color: rgba(black, 0.06);
+                position: relative;
+                cursor: pointer;
+                &:after {
+                  transition: $transition;
+                  content: "";
+                  width: $width/2;
+                  height: $height;
+                  display: block;
+                  background-color: $orange;
+                  border-radius: 50%;
+                  box-shadow: 0 1px 2px rgba(black, 0.4),
+                    0 3px 2px rgba(black, 0.4);
+                  position: absolute;
+                  top: -3px;
+                  left: -2px;
+                }
+              }
+  
+              input {
+                display: none;
+                &:checked + .toggle-control {
+                  border-color: $orange;
+                  background-color: $orange;
+                  &:after {
+                    left: 50%;
+                  }
+                }
+              }
+              .toggle_input {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+}
+
+
+@media (max-width:500px){
+  .navigation .navigation__content .title{
+    min-height: 40px;
+    height: 40px;
+  }
+  .navigation .navigation__content .navigation__menu {
+    display: block;
+    text-align: center;
+    ul {
+      display: inline-flex;
+    width: auto;
+    align-items: center;
+      li{
+        display: inline-block;
+        width: auto;
+        min-width: 90px;
+        margin:5px 0 0px;
+        &:first-child{
+          margin:5px 0 0px;
+        }
+        &::after{
+          top: 100%;
+          right: 10%;
+          width: 80%;
+          height: 0;
+        }
+        &.active{
+          &::after{
+            height: 2px;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

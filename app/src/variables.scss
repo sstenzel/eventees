@@ -1,0 +1,12 @@
+$orange: #F2994A;
+$light-orange: #f5b780;
+$yellow: #F2C94C;
+$black: #3f3f3f;
+$light-black: #4f4f4f;
+$white: #fff;
+$dark-orange: #e55d2b;
+
+@mixin gradient($angle) {
+    background-image: linear-gradient($angle,$orange, $yellow);
+}
+

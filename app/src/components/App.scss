@@ -1,0 +1,27 @@
+.app {
+  &__navigation {
+    flex-basis: 90px;
+    max-width: 90px;
+    @include gradient(100deg);
+    box-shadow: 2px 2px 5px 0px rgba($black,0.05 );
+    position:relative;
+    z-index:99;
+  }
+  &__map, &__admin{
+      flex-basis: calc(100% - 90px);
+      max-width: calc(100% - 90px);
+  }
+}
+
+@media (max-width:500px){
+  .app{
+    &__navigation {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+    &__map, &__admin{
+        flex-basis: 100%;
+        max-width:100%;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.map-section-add_event {
+  width: 0;
+  left:unset;
+  right: 0px;
+  &.active {
+    .map__icon {
+      background-image: none;
+      right: 30px;
+      opacity: 0;
+    }
+  }
+  &.left{
+    left: 340px;
+  }
+  .map__icon {
+    position: absolute;
+    right: 60px;
+    bottom: 24px;
+  }
+  .map-section__inner {
+    form {
+      .form__element{
+        .map__search__container{
+          width: 100%;
+        }
+        .form__element__button{
+          text-align: left;
+        }
+      }
+      
+      .filter-sports {
+        margin-top: 20px;
+        .filter-sports__single {
+          width: 48px;
+          height: 48px;
+          border-radius: 5px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.8;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+          border: 1px solid transparent;
+          img {
+            width: 23px;
+          }
+          &:hover {
+            border-color: #aaa;
+            opacity: 1;
+          }
+          &.active {
+            border-color: $orange;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.choose-location-buttons{
+  cursor: pointer;
+  color: $orange;
+  text-align: left;
+}
+
+.search-item-container{
+  position:absolute;
+  bottom:50px;
+  right:0px;
+  width: 100% !important;
+  background: white !important;
+  .search-item {
+    color: $orange;
+    &:hover{
+      color: $dark-orange;
+    }
+  }
+}
+
+.custom-dropdown {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  select {
+    text-overflow: '';    /*Hiding the select arrow for firefox*/
+    -moz-appearance: none;    /*Hiding the select arrow for chrome*/
+    -webkit-appearance: none;     /*Hiding the select arrow default implementation*/
+    appearance: none;
+
+    border-radius: 0px !important;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    option {
+      //background: $yellow;
+      //color: white;
+      width: 100%;
+      color: $orange;
+
+    }
+  }
+
+  &::before,    /* before - arrow background */
+  &::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 40%;
+    //font-size: 40%;
+    line-height: 1;
+    right: 0%;
+    top: 50%;
+    margin-top: -.5em;
+    color: white;
+
+    color: rgba(255,255,255, .6);
+  }
+
+  select[disabled] {
+    color: rgba(0, 0, 0, .25);
+  }
+
+}
+
+.map-section-add_event .map-section__heading img.back{
+  transform: translateY(-50%) rotate(180deg);
+}
